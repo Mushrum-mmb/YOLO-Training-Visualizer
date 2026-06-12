@@ -2,12 +2,12 @@
 
 <div align="center">
 
-### **I made this for educational purposes, exploring ResNet architectures, custom training loops, and hands-on deep learning implementations of Image Classification.**
+### **A real-time, interactive logging board tailored for parsing YOLO training logs (`results.csv`) and rendering advanced computer vision metrics.**
 
-![AI Banner](https://img.shields.io/badge/AI-Image%20Classification-blue?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-Latest-red?style=for-the-badge&logo=pytorch&logoColor=white)
-![ResNet](https://img.shields.io/badge/Model-ResNet--50-green?style=for-the-badge&logo=atom&logoColor=white)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org)
+[![Gradio](https://img.shields.io/badge/Gradio-Interface-orange.svg?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app)
+[![YOLO](https://img.shields.io/badge/YOLO-Ultralytics-green.svg?style=for-the-badge&logo=target&logoColor=white)](https://github.com/ultralytics/ultralytics)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 ⭐ **Star this repo if it helps you!** ⭐
 
@@ -38,66 +38,58 @@
 
 <div align="center">
 
-**🤖 Cutting-edge AI image classification powered by ResNet-50!**
+**YOLO Training Visualizer** is a lightweight, intuitive visualization tool built on top of **Gradio**. This application allows computer vision engineers and developers to seamlessly upload their `results.csv` log files (generated during Ultralytics YOLO model training) to analyze, compare, and monitor essential performance metrics interactively in real time.
 
 </div>
 
 <div align="center">
 
-| **Accuracy** | **Model** | **Framework** | **Author** |
-|:---:|:---:|:---:|:---:|
-| **92.5%** | ResNet-50 | Gradio | [Mushrum-mmb](https://github.com/Mushrum-mmb/) |
+| **Interface** | **Framework** | **Author** |
+|:---:|:---:|:---:|
+| Web_based | Gradio | [Mushrum-mmb](https://github.com/Mushrum-mmb/) |
 
 </div>
 
 ### 🌟 **Key Highlights:**
-- **State-of-the-art accuracy** at 92.5%.
-- **Real-time predictions** with confidence scores
-- **Web-based interface** for easy access
-- **Comment tutoring** support in code
-- **Cross-platform compatibility**
+- **Flexible File Upload**: Supports dragging and dropping or directly browsing to upload your `results.csv` file.
+- **Real-time Graphs**: Automatically parses data and renders responsive, interactive charts.
+- **Comprehensive Metric Tracking**:
+  - **Loss Metrics**: Box Loss, Cls Loss, DFL Loss (for both Train and Validation sets).
+  - **Performance Metrics**: Precision (B), Recall (B), mAP50 (B), mAP50-95 (B).
+- **User-friendly Interface**: Clean, modern UI with built-in support for Gradio's automatic light/dark mode toggling.
 ---
 
 ## 📸 Gallery
 
 <div align="center">
     
-### 📊 **Current Model Performance**
+### 🔍 **See the Magic in Action!**
 
-
-*Note: This exceptional accuracy is calculated from validation datasets. Real-world performance may vary. *
-
-
-![Accuracy Badge](https://img.shields.io/badge/Accuracy-92.5%25-brightgreen?style=for-the-badge&logo=target&logoColor=white)
-![Status](https://img.shields.io/badge/Status-ProductionReady-green?style=for-the-badge&logo=target&logoColor=white)
-
-
-*Confusion matrix*
-
-
+*Examples of successful classify training visualization*
 <div align="center">
-<img width="2000" height="2000" alt="image" src="https://github.com/user-attachments/assets/1106b18c-5d97-40b0-aa29-302cd5a2c9b5" />
+
+<img width="1170" height="864" alt="image" src="https://github.com/user-attachments/assets/acd32af6-79a9-4569-87a5-29aee7a8ad18" />
 
 </div>
 
+*Detection Training*
+<div align="center">
+<img width="1160" height="757" alt="image" src="https://github.com/user-attachments/assets/1164290b-8008-45a5-998a-bef7d5b1bd10" />
 
-*Tensorboard quick view and comparison*
+</div>
 
+*Pose Estimation*
 
 <div align="center">
-<img width="864" height="555" alt="image" src="https://github.com/user-attachments/assets/d6188475-da14-4c6b-babd-b779df8eb3d6" />
-<img width="652" height="411" alt="image" src="https://github.com/user-attachments/assets/af32bd6e-cfd3-4a70-909c-a218f47a2290" />
+
+<img width="1164" height="766" alt="image" src="https://github.com/user-attachments/assets/330c3f6a-92ad-44a1-9dad-3a946e42318a" />
    
 </div>
 
-
-*Examples of successful animal image classification*
-
+*Segmentation*
 
 </div>
-<img width="1876" height="787" alt="image" src="https://github.com/user-attachments/assets/611ea1c2-31da-4444-9481-c5f7a8298f1f" />
-<img width="1856" height="896" alt="image" src="https://github.com/user-attachments/assets/554bf682-34ce-47a2-9c56-69ffe952595a" />
-<img width="1859" height="963" alt="image" src="https://github.com/user-attachments/assets/8ea137ca-b794-4807-b2f7-e7b95d376705" />
+<img width="1162" height="760" alt="image" src="https://github.com/user-attachments/assets/2936f6d9-2413-4c99-af2c-a914deb4bba1" />
 
 </div>
 
@@ -113,12 +105,12 @@
 
 | Feature | Description | Benefit |
 |---------|-------------|---------|
-| **Image Classification** | Upload images for instant animal category prediction | Quick and accurate results |
-| **Pre-trained Model** | ResNet-50 architecture fine-tuned on animal datasets | Superior accuracy and reliability |
-| **Real-time Inference** | Instant predictions with confidence percentages | Immediate feedback for users |
-| **GPU Acceleration** | Automatic GPU detection and utilization | Lightning-fast processing |
-| **Easy Deployment** | One-command launch with public sharing option | Hassle-free setup and sharing |
-| **Google Colab Ready** | Optimized for cloud-based training and testing | Perfect for low-spec devices |
+| **Real-time Parsing** | Extracts live training metrics from Ultralytics `results.csv` files | Instant insights without reading raw data |
+| **Comprehensive Charts** | Visualizes both complex Loss functions and Performance metrics | Clear oversight of model convergence |
+| **Instant Inference** | Dynamic graph rendering immediately upon file upload | No lag, smooth user experience |
+| **Gradio Web UI** |Modern, reactive web interface accessible directly via browser | No complex GUI dependencies required |
+| **Easy Deployment** | Launches with a single command and supports public link sharing | Seamless collaboration and quick previews |
+| **Zero Setup Overheads** | Lightweight implementation running purely on the CPU/GPU local backend | Works on any device without heavy deep learning environments |
 
 <div align="center">
 
@@ -133,18 +125,18 @@
 
 <div align="center">
 
-### 🚀 **Launch Your AI in 3 Simple Steps!**
+### 🚀 **Launch this App in 4 Simple Steps!**
 
 </div>
 
 **Step 1:** Clone the repository
 ```bash
-git clone https://github.com/Mushrum-mmb/ResNet-Implementation-Drafts.git
+git clone https://github.com/Mushrum-mmb/YOLO-Training-Visualizer.git
 ```
 
 **Step 2:** Navigate to project directory
 ```bash
-cd ResNet-Implementation-Drafts
+cd YOLO-Training-Visualizer
 ```
 
 **Step 3:** Install the requirements
@@ -159,11 +151,12 @@ python app.py
 
 <div align="center">
     
-*🎉 Your AI is Ready! Open the provided link in your browser and start classifying images!*
+*🎉 Your App is Ready! Open the provided link in your browser and start visualizing trainings!*
 
 </div>
 
-<img width="872" height="361" alt="image" src="https://github.com/user-attachments/assets/0ef57810-6335-4b80-a73a-dc2926c7ba76" />
+<img width="866" height="288" alt="image" src="https://github.com/user-attachments/assets/499c5f8d-a5b4-41f4-a284-fdb041f85f1d" />
+
 
 ---
 
@@ -173,7 +166,7 @@ python app.py
 
 ### ☁️ **Perfect for Potato Computers!** 🥔
 
-[![Open In Colab](https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/13yuj3zqh8ed1wi9KkUfnDeBKN0ZYgel1?usp=sharing)
+[![Open In Colab](https://img.shields.io/badge/Open_in-Google_Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)](https://colab.research.google.com/drive/1BF0_3p7gzR7V3YiGQX97JrS4q769pErK?usp=sharing)
 
 </div>
 
@@ -183,7 +176,9 @@ Can't run AI on your device? No problem! Use our optimized Google Colab notebook
 <summary>📖 <strong>Colab Guide (Click to expand)</strong></summary>
 
 *Just execute the first and second cell*
-<img width="1808" height="770" alt="image" src="https://github.com/user-attachments/assets/3d92bae8-4ad5-4689-b835-acd73a8615ac" />
+
+<img width="1792" height="749" alt="image" src="https://github.com/user-attachments/assets/0384ad75-f37a-4443-8047-456f6befcc78" />
+
 
 **Launch and enjoy! 🎉**
 
@@ -199,27 +194,32 @@ Can't run AI on your device? No problem! Use our optimized Google Colab notebook
 
 </div>
 
-Our AI system consists of five core components working in harmony:
+Our real-time logging board processes CSV telemetry and hardware data through a centralized pipeline:
 
 <div align="center">
 
 ```mermaid
 graph TD
-    A[Image Input] --> C[datasets.py]
-    C --> D[train.py]
-    D --> E[test.py]
-    E --> F[app.py]
-    F --> G[Gradio Interface]
+    A[results.csv Input] -->|Pandas Parsing| B{Task Matcher}
+    B -->|'train/seg_loss'| C[segmentation_task]
+    B -->|'train/pose_loss'| D[pose_estimation_task]
+    B -->|'metrics/accuracy_top1'| E[classification_task]
+    B -->|'train/box_loss'| F[detection_task]
+    
+    G[psutil & pynvml] -->|Hardware Telemetry| H[System Resource Plots]
+    
+    C & D & E & F & H -->|Matplotlib Figures| I[Gradio Timer Event]
+    I -->|Reactive Rendering| J[Gradio Interface Dashboard]
 ```
 
 </div>
 
 | Component | Purpose | Key Features |
 |-----------|---------|-------------|
-| **datasets.py** | Data Management | • Custom PyTorch dataset class<br>• Image normalization and transforms<br>• Train/test data splitting |
-| **train.py** | Model Training | • ResNet-50 architecture implementation<br>• TensorBoard logging integration<br>• Automatic checkpoint saving |
-| **test.py** | Model Testing | • Single image inference<br>• Confidence score calculation<br>• Visual result display |
-| **app.py** | Web Interface | • Gradio-powered UI<br>• Real-time predictions<br>• Public sharing capabilities |
+| **Task Matcher** | Log Classification | • Automatically detects YOLO task types from CSV headers.<br>• Routes logs to matching analysis tracks. |
+| **Task Functions** | Metric Processing | • Evaluates training/validation metrics and learning rates.<br>• Computes best scores using a colored threshold picker. |
+| **Resource Monitors** | Hardware Telemetry | • Tracks rolling CPU, RAM, and Disk metrics via `psutil`.<br>• Hooks into NVIDIA VRAM logs via `pynvml`. |
+| **App Interface** | Dashboard Loop | • Drives seamless page-switching inside a terminal theme.<br>• Uses `gr.Timer` to stream data updates without reloading. |
 
 ---
 
