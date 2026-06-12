@@ -1,0 +1,5 @@
+matplotlib
+psutil
+nvidia-ml-py
+gradio
+pandas
